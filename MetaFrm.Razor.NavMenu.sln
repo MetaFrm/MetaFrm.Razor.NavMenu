@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32611.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0F4637A3-337C-414C-9473-2CEC91A2987A}"
+	ProjectSection(SolutionItems) = preProject
+		src\NavMenu.razor.cs = src\NavMenu.razor.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModels", "ViewModels", "{CC1E8AD2-91E5-47C1-8F53-293A9A0CD3B2}"
+	ProjectSection(SolutionItems) = preProject
+		src\ViewModels\NavMenuViewModel.cs = src\ViewModels\NavMenuViewModel.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{51E78244-6B63-47B9-ADD3-739EA1E14AD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{1371C18F-0AF9-4D2B-A48A-E5AF80B99DED}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build_8.0.yml = .github\workflows\build_8.0.yml
+		.github\workflows\build_9.0.yml = .github\workflows\build_9.0.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{8649DBA9-1C66-4861-BFF9-32BF8014EDCB}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{C8D5274F-AC00-46C7-1F8D-E88E81087A52}"
+	ProjectSection(SolutionItems) = preProject
+		src\Models\MenuItemModel.cs = src\Models\MenuItemModel.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaFrm.Razor.NavMenu(net8.0)", "MetaFrm.Razor.NavMenu(net8.0)\MetaFrm.Razor.NavMenu(net8.0).csproj", "{918E39AC-04C6-DF90-85E8-27E2E2A37766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaFrm.Razor.NavMenu(net9.0)", "MetaFrm.Razor.NavMenu(net9.0)\MetaFrm.Razor.NavMenu(net9.0).csproj", "{91622FEE-BE98-617D-769D-E38C8CE4607F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{918E39AC-04C6-DF90-85E8-27E2E2A37766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918E39AC-04C6-DF90-85E8-27E2E2A37766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918E39AC-04C6-DF90-85E8-27E2E2A37766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918E39AC-04C6-DF90-85E8-27E2E2A37766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91622FEE-BE98-617D-769D-E38C8CE4607F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91622FEE-BE98-617D-769D-E38C8CE4607F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91622FEE-BE98-617D-769D-E38C8CE4607F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91622FEE-BE98-617D-769D-E38C8CE4607F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC1E8AD2-91E5-47C1-8F53-293A9A0CD3B2} = {0F4637A3-337C-414C-9473-2CEC91A2987A}
+		{1371C18F-0AF9-4D2B-A48A-E5AF80B99DED} = {51E78244-6B63-47B9-ADD3-739EA1E14AD6}
+		{C8D5274F-AC00-46C7-1F8D-E88E81087A52} = {0F4637A3-337C-414C-9473-2CEC91A2987A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72ACB9CB-3847-492F-84A5-419B30FA6C9A}
+	EndGlobalSection
+EndGlobal
