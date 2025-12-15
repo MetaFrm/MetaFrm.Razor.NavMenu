@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11205.157 d18.0
+VisualStudioVersion = 18.0.11205.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0F4637A3-337C-414C-9473-2CEC91A2987A}"
 	ProjectSection(SolutionItems) = preProject
@@ -18,8 +18,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{1371C18F-0AF9-4D2B-A48A-E5AF80B99DED}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\build_10.0.yml = .github\workflows\build_10.0.yml
-		.github\workflows\build_8.0.yml = .github\workflows\build_8.0.yml
-		.github\workflows\build_9.0.yml = .github\workflows\build_9.0.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{8649DBA9-1C66-4861-BFF9-32BF8014EDCB}"
@@ -34,10 +32,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{C8D527
 		src\Models\MenuItemModel.cs = src\Models\MenuItemModel.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaFrm.Razor.NavMenu(net8.0)", "MetaFrm.Razor.NavMenu(net8.0)\MetaFrm.Razor.NavMenu(net8.0).csproj", "{918E39AC-04C6-DF90-85E8-27E2E2A37766}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaFrm.Razor.NavMenu(net9.0)", "MetaFrm.Razor.NavMenu(net9.0)\MetaFrm.Razor.NavMenu(net9.0).csproj", "{91622FEE-BE98-617D-769D-E38C8CE4607F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaFrm.Razor.NavMenu(net10.0)", "MetaFrm.Razor.NavMenu(net10.0)\MetaFrm.Razor.NavMenu(net10.0).csproj", "{82190AD6-11CB-49A4-124B-4CFA2CBC9E4F}"
 EndProject
 Global
@@ -46,14 +40,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{918E39AC-04C6-DF90-85E8-27E2E2A37766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{918E39AC-04C6-DF90-85E8-27E2E2A37766}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{918E39AC-04C6-DF90-85E8-27E2E2A37766}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{918E39AC-04C6-DF90-85E8-27E2E2A37766}.Release|Any CPU.Build.0 = Release|Any CPU
-		{91622FEE-BE98-617D-769D-E38C8CE4607F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91622FEE-BE98-617D-769D-E38C8CE4607F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91622FEE-BE98-617D-769D-E38C8CE4607F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{91622FEE-BE98-617D-769D-E38C8CE4607F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{82190AD6-11CB-49A4-124B-4CFA2CBC9E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{82190AD6-11CB-49A4-124B-4CFA2CBC9E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82190AD6-11CB-49A4-124B-4CFA2CBC9E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
