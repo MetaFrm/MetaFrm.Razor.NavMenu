@@ -13,7 +13,7 @@
                 <a class="navbar-brand" @onclick="() => this.OnMenuHomeClick()" href="javascript:void(0)">
                     @if (this.IsLogoView)
                     {
-                        @if (!this.LogoImageUrl.IsNullOrEmpty() && this.LogoImageSize != null)
+                        @if (!string.IsNullOrEmpty(this.LogoImageUrl) && this.LogoImageSize != null)
                         {
                             <img src="@this.LogoImageUrl" data-toggle="tooltip" title="@this.LogoText" width="@this.LogoImageSize.Value.Width" height="@this.LogoImageSize.Value.Height" />
                         }
@@ -89,7 +89,7 @@
                                 <Authorized>
                                     <li class="nav-item me-2">
                                         <a class="nav-link" href="javascript:void(0)" data-toggle="tooltip" title="@this.DisplayName" @onclick="this.OnProfileClick">
-                                            @if (!this.ProfileImage.IsNullOrEmpty())
+                                            @if (!string.IsNullOrEmpty(this.ProfileImage))
                                             {
                                                 <img class="rounded-pill me-2" alt="Profile" width="30" height="30" src="@this.ProfileImage" />
                                             }

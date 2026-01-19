@@ -78,7 +78,7 @@ namespace MetaFrm.Razor
 
             string? tmp = this.GetAttribute(nameof(this.LogoImageSize));
             string[]? tmps;
-            if (!tmp.IsNullOrEmpty())
+            if (!string.IsNullOrEmpty(tmp))
             {
                 tmps = tmp.Split(',');
                 this.LogoImageSize = new Size(tmps[0].ToInt(), tmps[1].ToInt());
@@ -180,7 +180,7 @@ namespace MetaFrm.Razor
                     {
                         string? tmp = await this.DeviceToken.GetToken();
 
-                        if (Config.Client.GetAttribute("IsSaveToken") == null && this.DeviceInfo != null && this.DeviceInfo.Model != null && !tmp.IsNullOrEmpty())
+                        if (Config.Client.GetAttribute("IsSaveToken") == null && this.DeviceInfo != null && this.DeviceInfo.Model != null && !string.IsNullOrEmpty(tmp))
                             this.SaveToken(tmp);
                     }
                 }
@@ -188,7 +188,7 @@ namespace MetaFrm.Razor
                 {
                     serviceData = new()
                     {
-                        Token = Factory.AccessKey
+                        Token = Factory.ProjectService.Token
                     };
                     serviceData["1"].CommandText = this.GetAttribute("Select.MenuDefault");
                     serviceData["1"].AddParameter("USER_ID", DbType.Int, 3, null);
