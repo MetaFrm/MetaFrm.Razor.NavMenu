@@ -139,8 +139,7 @@ namespace MetaFrm.Razor
         {
             if (disposing)
             {
-                if (this.Layout != null)
-                    this.Layout.Action -= Layout_Action;
+                this.Layout?.Action -= Layout_Action;
             }
         }
 
