@@ -172,10 +172,20 @@
                                 }
                                 else
                                 {
-                                    <a href="javascript:void(0)" @onclick="() => this.OnOpenMenuClick(parentMenuItem.MenuID)" class="menu-link @(parentMenuItem.Child.Count > 0 ? "menu-toggle" : "")">
-                                        <i class="menu-icon @parentMenuItem.Icon"></i>
-                                        <div data-i18n="@Localization[parentMenuItem.Name ?? ""]" data-toggle="tooltip" title="@Localization[parentMenuItem.Description ?? ""]">@Localization[parentMenuItem.Name ?? ""]</div>
-                                    </a>
+                                    @if (Uri.IsWellFormedUriString(parentMenuItem.Description, UriKind.Absolute))
+                                    {
+                                        <a href="@parentMenuItem.Description" target="_blank" class="menu-link @(parentMenuItem.Child.Count > 0 ? "menu-toggle" : "")">
+                                            <i class="menu-icon @parentMenuItem.Icon"></i>
+                                            <div data-i18n="@Localization[parentMenuItem.Name ?? ""]" data-toggle="tooltip" title="@Localization[parentMenuItem.Description ?? ""]">@Localization[parentMenuItem.Name ?? ""]</div>
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a href="javascript:void(0)" @onclick="() => this.OnOpenMenuClick(parentMenuItem.MenuID)" class="menu-link @(parentMenuItem.Child.Count > 0 ? "menu-toggle" : "")">
+                                            <i class="menu-icon @parentMenuItem.Icon"></i>
+                                            <div data-i18n="@Localization[parentMenuItem.Name ?? ""]" data-toggle="tooltip" title="@Localization[parentMenuItem.Description ?? ""]">@Localization[parentMenuItem.Name ?? ""]</div>
+                                        </a>
+                                    }
                                 }
                             }
 
